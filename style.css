@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #FFFFFF; /* Clean white */
+    margin: 0;
+    padding: 20px;
+    color: #333333; /* Dark text for readability */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); /* Subtle shadow on white */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Light shadow */
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #D10000, #FCDC04); /* Red-to-yellow accent */
+}
+
+h1 {
+    color: #D10000; /* Muni red for header */
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #555555; /* Medium gray for subtext */
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border: 2px solid #E0E0E0; /* Light border */
+    border-radius: 8px;
+    font-size: 16px;
+    background: #FAFAFA; /* Off-white input */
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #D10000;
+    box-shadow: 0 0 0 3px rgba(209, 0, 0, 0.1);
+}
+
+input::placeholder {
+    color: #999999; /* Light gray placeholder */
+}
+
+button {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #D10000, #B30000); /* Red gradient */
+    color: #FFFFFF; /* White text on red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(209, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result {
+    background: #F8F9FA; /* Light gray bg for results */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #FCDC04; /* Yellow accent */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.result h3 {
+    color: #006994; /* Blue for names */
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.result p {
+    margin: 5px 0;
+    text-align: left;
+    color: #555555;
+}
+
+.result strong {
+    color: #D10000; /* Red for labels */
+}
+
+.result em {
+    color: #006994; /* Blue for congrats */
+    font-style: italic;
+}
+
+.error {
+    color: #D10000; /* Red for errors */
+    text-align: center;
+    background: #FFF5F5;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #FFE6E6;
+}
+
+.social-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    color: #666666; /* Dark gray icons on white */
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #006994; /* Blue hover for contrast */
+    transform: scale(1.2);
+}
+
+.social-footer p {
+    margin: 0;
+    color: #888888; /* Gray footer text */
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    input, button {
+        width: 100%;
+        min-width: unset;
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+    
+    .social-icons {
+        gap: 15px;
+    }
+    
+    .social-link {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+}
+.disclaimer {
+    color: #888888 !important;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #E0E0E0;
+    text-align: center;
+}
