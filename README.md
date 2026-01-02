@@ -28,6 +28,7 @@ This project converts the graduation list into a **simple, fast search tool**.
 - Instantly view their academic program  
 - Useful for graduates, classmates, and **employers doing quick checks**
 
+
 ---
 
 ## 🧑‍🎓 About
@@ -47,7 +48,8 @@ Created as a small side project to help fellow graduates and anyone needing fast
 Example searches:
 - **Ogwal Joshua Robin** — Bachelor of Information Technology  
 - **Anyait Sharon** — Bachelor of Nursing Science  
-- **Ojwang Nicholas** — Bachelor of Information Technology  
+- **Ojwang Nicholas** — Bachelor of Information Technology
+- Try it yourself https://muni-uni-8th-grad.kesug.com/
 
 ---
 
